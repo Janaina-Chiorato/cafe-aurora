@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Aurora: uma cafeteria fictícia com sabores artesanais e ambiente acolhedor.">
+  <title>Café Aurora | Um novo sabor para o seu dia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho" id="inicio">
+    <div class="container barra">
+      <a class="marca" href="#inicio" aria-label="Café Aurora, início"><span class="sol">☀</span> Café <strong>Aurora</strong></a>
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao">☰</button>
+      <nav id="navegacao" class="navegacao" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a><a href="#cardapio">Cardápio</a><a href="#horarios">Horários</a><a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="container hero-conteudo">
+        <span class="etiqueta">CAFÉ • AFETO • BONS MOMENTOS</span>
+        <h1 id="titulo-principal">Seu dia começa com um <em>novo aroma.</em></h1>
+        <p>Uma pausa especial, sabores artesanais e o aconchego que transforma qualquer manhã.</p>
+        <a class="botao" href="#cardapio">Conheça nosso cardápio <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section id="sobre" class="secao sobre container">
+      <div class="sobre-icone" aria-hidden="true">☕</div>
+      <div><span class="sobretitulo">PRAZER, CAFÉ AURORA</span><h2>Mais que café, um momento para você.</h2><p>O Café Aurora é uma cafeteria fictícia criada para celebrar encontros, conversas e pequenos prazeres. Nossa inspiração são os grãos selecionados, as receitas artesanais e a tranquilidade de uma boa pausa.</p></div>
+    </section>
+    <section id="cardapio" class="secao cardapio">
+      <div class="container"><div class="titulo-secao"><span class="sobretitulo">FEITO COM CARINHO</span><h2>Nossos favoritos</h2><p>Três sabores especiais para tornar seu dia mais gostoso.</p></div>
+      <div class="produtos">
+        <article class="produto"><img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=900&q=85" alt="Cappuccino com espuma cremosa" loading="lazy"><div class="produto-texto"><span class="categoria">CREMOSO</span><h3>Cappuccino Aurora</h3><p>Espresso encorpado, leite vaporizado e uma delicada camada de espuma.</p><strong>R$ 16,90</strong></div></article>
+        <article class="produto"><img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=900&q=85" alt="Café espresso em xícara" loading="lazy"><div class="produto-texto"><span class="categoria">CLÁSSICO</span><h3>Espresso da Casa</h3><p>Uma dose intensa e aromática para quem ama café de verdade.</p><strong>R$ 9,90</strong></div></article>
+        <article class="produto"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85" alt="Croissants dourados e folhados" loading="lazy"><div class="produto-texto"><span class="categoria">ARTESANAL</span><h3>Croissant Artesanal</h3><p>Massa folhada, leve e dourada, preparada para acompanhar seu café.</p><strong>R$ 14,90</strong></div></article>
+      </div></div>
+    </section>
+    <section id="horarios" class="secao horarios"><div class="container horarios-grade"><div><span class="sobretitulo">NOSSA ROTINA</span><h2>Tem sempre uma boa hora para um café.</h2><p>Confira nossos horários ilustrativos de funcionamento.</p></div><div class="horario-cartao"><h3>Horário de funcionamento</h3><div><span>Segunda a sexta</span><strong>08h às 19h</strong></div><div><span>Sábado</span><strong>09h às 18h</strong></div><div><span>Domingo</span><strong>09h às 14h</strong></div><small>* Horários fictícios para demonstração.</small></div></div></section>
+    <section id="contato" class="secao contato container"><div><span class="sobretitulo">FALE COM A GENTE</span><h2>Uma conversa combina com café.</h2><p>Deixe uma mensagem para conhecer a interação do nosso site demonstrativo.</p><p class="aviso">Este é um projeto fictício. Nenhuma mensagem será enviada ou armazenada.</p></div><form id="formulario-contato" class="formulario"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" placeholder="Como podemos chamar você?" required maxlength="80"><label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@exemplo.com" required><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..." required maxlength="1000"></textarea><button class="botao" type="submit">Simular envio</button><p id="retorno-formulario" class="retorno" role="status" aria-live="polite"></p></form></section>
+  </main>
+  <footer class="rodape"><div class="container rodape-conteudo"><span class="marca">☀ Café <strong>Aurora</strong></span><p>Projeto demonstrativo • Cafeteria fictícia</p><small>© <span id="ano"></span> Café Aurora</small></div></footer>
+  <button class="voltar-topo" type="button" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>
